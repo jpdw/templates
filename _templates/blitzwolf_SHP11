@@ -18,11 +18,12 @@ Once the case has been taken off, the chip is found sticking up. Flip the board 
 ```haskell
 +5v   |   GND
 RX    |   TX
-----  |
-GPIO0 |
-----  |
-----  |
-----  |
+----  | ----
+GPIO0 | ----
+----  | GPIO2
+----  | ----
+----  | ----
 ```
 
 (Make sure to put RX on board to TX on adapter and TX to RX on adapter )
+You may need to pull-up GPIO2 to get into bootloader mode
